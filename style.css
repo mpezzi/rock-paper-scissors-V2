@@ -1,0 +1,10 @@
+body {
+    background: no-repeat url("https://i.pinimg.com/originals/7a/e2/c1/7ae2c145d8cf80f7ee9d59a7131b04a3.jpg");
+    background-color: black;
+}
+
+#container .scoreBox {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+}
