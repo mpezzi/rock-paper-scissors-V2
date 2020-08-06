@@ -1,5 +1,5 @@
 makeScoreBox = () => {
-    const container = document.querySelector('#container');
+    const container = document.querySelector('.container');
     const div = document.createElement('div');
     div.classList.add('scoreBox');
     const h3 = document.createElement('h3');
@@ -41,7 +41,7 @@ function playRound (playerSelection, computerSelection) {
         console.log("YOU WIN!");
         container.appendChild(div);
         return playerScore += 1;
-        
+
     } else {
         makeScoreBox();
         console.log("It's a tie");
@@ -64,10 +64,16 @@ buttons.forEach((button) => {
 // function game() {
 //     for (let i = 0; i < 5; i++) {
 //         const computerSelection = choices[Math.floor(Math.random()*choices.length)];
-//         playRound(playerSelection, computerSelection);  
+//         playRound(playerSelection, computerSelection);
 //     };
 //     return;
 // };
 // game();
 
-makeScoreBox();
+// The DOMContentLoaded event fires when the initial HTML document has been
+// completely loaded and parsed, without waiting for stylesheets, images, and
+// subframes to finish loading.
+// @see: https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event
+document.addEventListener('DOMContentLoaded', () => {
+    makeScoreBox();
+});
