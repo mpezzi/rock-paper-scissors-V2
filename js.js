@@ -1,5 +1,5 @@
 makeScoreBox = () => {
-    const container = document.querySelector('.container');
+    const container = document.querySelector('#score-box');
     const div = document.createElement('div');
     div.classList.add('scoreBox');
     const h3 = document.createElement('h3');
